@@ -7,7 +7,7 @@
 
 ## Building
 ```
-docker build -t nuttx .
+docker build -t nuttx .devcontainer
 ```
 
 ## Running
