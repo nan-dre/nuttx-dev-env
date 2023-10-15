@@ -1,0 +1,12 @@
+{
+	"name": "nuttx",
+	"dockerFile": "Dockerfile",
+	"runArgs": ["--init", "--privileged"],
+	"mounts": [
+        "source=${localWorkspaceFolder}/apps,target=/root/nuttxspace/apps,type=bind",
+        "source=${localWorkspaceFolder}/nuttx,target=/root/nuttxspace/nuttx,type=bind",
+        "source=/dev/ttyUSB0,target=/dev/ttyUSB0,type=bind"
+    ],
+	"workspaceFolder": "/root/nuttxspace",
+	"remoteUser": "root"
+}
